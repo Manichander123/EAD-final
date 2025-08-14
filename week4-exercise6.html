@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=prompt("enter the number");
+        n=Number(n);
+        let p=0;
+        let k=0;
+        while (n!=0){
+            k=n%10
+            p=p*10+k
+            n=Math.floor(n/10)
+        }
+        console.log("reverse of the number is :",p)
+
+    </script>
+    
+
+</body>
+</html>
