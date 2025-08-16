@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+         .calculator {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        #display {
+            height: 60px;
+            font-size: 24px;
+            text-align: right;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #f4f4f4;
+            color: #333;
+            box-shadow: inset 2px 2px 5px #d1d1d1, inset -2px -2px 5px #ffffff;
+            /* Add this line to create space below the display */
+            margin-bottom: 20px; 
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 70px);
+            gap: 10px;
+        }
+
+        button {
+            height: 50px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #444;
+            color: #fff;
+            transition: background 0.3s;
+        }
+        .opeartors{
+            font-size: 13px;
+            background-color: #EEE; 
+            color: #333;
+            border-radius: 3px solid black;
+            padding:5px;
+        }
+        .opeartors:hover{
+            background-color: #FFA07A;
+        }
+        .equal{
+            font-size: 13px;
+            color:white;
+            background-color: rgb(235, 64, 64);
+            border-radius: 3px solid black;
+            padding:5px;
+        }
+        .equal:hover{
+            background-color: rgb(201, 23, 23);
+            transition: 1s;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+        <button onclick="clearDisplay()" class="opeartors">C</button>
+        <button onclick="lastdelete()" class="opeartors">D</button>
+        <button  class="opeartors" onclick="appendvalue('.') ">.</button>
+        <button  class="opeartors" onclick="appendvalue('/')">/</button>
+
+        <button onclick="appendvalue('1')">1</button>
+        <button onclick="appendvalue('2')">2</button>
+        <button onclick="appendvalue('3')">3</button>
+        <button class="opeartors" onclick="appendvalue('+')">+</button>
+
+
+        <button onclick="appendvalue('4')">4</button>
+        <button onclick="appendvalue('5')">5</button>
+        <button onclick="appendvalue('6')">6</button>
+        <button class="opeartors" onclick="appendvalue('-')">-</button>
+
+
+        <button onclick="appendvalue('7')">7</button>
+        <button onclick="appendvalue('8')">8</button>
+        <button onclick="appendvalue('9')">9</button>
+        <button class="opeartors" onclick="appendvalue('*')">X</button>
+
+        <button class="equal" onclick="equate()">=</button>
+        <button onclick="appendvalue('0')">0</button>
+        </div>
+
+
+    </div>
+    <script>
+        let display = document.getElementById('display');
+        function appendvalue(value){
+            display.value += value;
+        }
+        function clearDisplay(){
+            display.value = "";
+        }
+        function lastdelete(){
+            display.value = display.value.slice(0, -1);
+        }
+        function equate(){
+            try{
+                display.value = eval(display.value);
+            }
+            catch(e){
+                display.value = "Error";
+            }
+        }
+    </script>
+</body>
+</html>
