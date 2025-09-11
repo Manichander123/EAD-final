@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My College</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-success">
+  <a class="navbar-brand text-white fw-bold ms-2">My College</a>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ms-auto me-3">
+      <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#">Courses</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <ul class="nav nav-tabs">
+    <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#overview">Overview</a></li>
+    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#notice">Notices</a></li>
+  </ul>
+
+  <div class="tab-content mt-3">
+    <div id="overview" class="tab-pane fade show active">
+      <h4>Welcome</h4>
+      <p>This portal provides info about departments and updates.</p>
+    </div>
+    <div id="notice" class="tab-pane fade">
+      <div class="alert alert-danger">New semester begins soon!</div>
+      <div class="alert alert-info">Workshop on AI next week.</div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

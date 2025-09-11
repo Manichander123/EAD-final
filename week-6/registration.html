@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="text-center mt-3">
+  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">Register</button>
+</div>
+
+<div class="modal fade" id="formModal">
+  <div class="modal-dialog">
+    <div class="modal-content p-3">
+      <h5 class="mb-2">Student Registration</h5>
+      <form>
+        <input class="form-control mb-2" placeholder="Full Name" required>
+        <input type="email" class="form-control mb-2" placeholder="Email" required>
+        <input type="password" class="form-control mb-2" placeholder="Password">
+        <div class="mb-2">Gender:
+          <input type="radio" name="g"> M
+          <input type="radio" name="g"> F
+        </div>
+        <select class="form-select mb-2">
+          <option>Choose Country</option>
+          <option>India</option><option>USA</option>
+        </select>
+        <button class="btn btn-success">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
