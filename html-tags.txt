@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid red;
+        }
+        </style>
+</head>
+<body>
+    <h1>this is the 1st file </h1><br>
+    <p>this is manichander creating this file </p>
+    <a href="https://www.w3schools.com/tags/tag_a.asp">press here!!!</a>
+    <br>
+    <button type="button"> click me </button>
+    <table>
+        <caption>Monthly savings</caption>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+      </table>
+    <pre> hi , the ead lab is totally 
+        improving our skills in 
+        developing a website      . so we must take it seriously
+    </pre>
+    <p>my goal is to : <q>to become the best </q></p>
+    <strong>the password for the safe is 123</strong>
+    <form action="www.google.com" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Submit</button>
+    </form>
+    <label for="cars">choose a car:</label>
+    <select name="cars" id="cars">
+        <optgroup label="Swedish cars">
+            <option value="volvo">Volvo</option>
+        </optgroup>
+        <optgroup label="Indian cars">
+            <option value="nano">Nano</option>
+        </optgroup>
+    </select>
+</body>
+</html>

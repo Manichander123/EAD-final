@@ -1,0 +1,18 @@
+input[type="submit"]{
+    background-color: lightgreen;
+    padding:auto ;
+    color:white;
+    border-radius: 5px;
+    cursor:pointer;
+}
+input[type="submit"]:hover{
+    background-color: lightcoral;
+}
+form{
+    border: 2px solid black;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:30px;
+    background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+}
